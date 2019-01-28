@@ -1,114 +1,131 @@
 <!doctype html>
-<html lang="de" class="bg-red">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Wenn du dich nicht aufhälts, kann dich nichts und niemand aufhalten!">
+<html lang="de"
+    class="h-screen bg-red m-0"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1"
+        >
+        <meta name="description"
+            content="Wenn du dich nicht aufhälts, kann dich nichts und niemand aufhalten!"
+        >
 
-    <title>Unaufhaltbar 💯</title>
+        <title>Unaufhaltbar 💯</title>
 
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon"
+            type="image/png"
+            href="favicon.png"
+        />
+        <link rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css?family=Nunito:200"
+        >
 
-    <style>
-    html, body {
-        background-color: #fff;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 200;
-        height: 100vh;
-        margin: 0;
-    }
-    .flex-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /**
-     * Credits to Steve Schogger for this wonderfull background image.
-     * Source:  https://www.heropatterns.com/
-     */
-    .bg {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23ffebef' fill-opacity='1' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
-    }
-    .bg::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: .5rem;
-        background: #EF5753;
-    }
-    .bg-white {
-        background: white;
-    }
-    .bg-red {
-        background: #EF5753;
-    }
-    .h-full {
-        height: 100%;
-    }
-    .h-screen {
-        height: 100vh;
-    }
-    .m-0 {
-        margin: 0;
-    }
-    .p-2 {
-        padding: .5rem;
-    }
-    .p-4 {
-        padding: 1rem;
-    }
-    .text-center {
-        text-align: center;
-    }
-    .text-black {
-        color: #22292F;
-    }
-    .text-red-dark {
-        color: #3B0D0C;
-    }
-    .hover\:text-grey:hover {
-        color: #606F7B;
-    }
-    @media (min-width: 576px) {
-        .sm-hidden {
-            display: none;
+        <style>
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-    }
-    .absolute {
-        position: absolute;
-    }
-    .pin-r {
-        right: 0
-    }
-    .pin-b {
-        bottom: 0;
-    }
-    .h-6 {
-        height: 1.5rem;
-    }
-    .cursor-crosshair {
-        cursor: crosshair;
-    }
-    .shadow {
-        box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-                    0 5px 15px 0 rgba(0,0,0,0.08);
-    }
-    </style>
-</head>
-<body class="bg">
-    <div class="flex-center h-screen">
-        <h1 class="m-0 p-4 text-center bg-white text-red-dark cursor-crosshair shadow">Du bist ein 🎁 <br class="sm-hidden">für die 🌍</h1>
-    </div>
+        /**
+         * Credits to Steve Schogger for this wonderfull background image.
+         * Source:  https://www.heropatterns.com/
+         */
+        .bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23ffebef' fill-opacity='1' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+        }
+        .bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: .5rem;
+            background: #EF5753;
+        }
+        .bg-white {
+            background-color: white;
+        }
+        .bg-red {
+            background-color: #EF5753;
+        }
+        .h-full {
+            height: 100%;
+        }
+        .h-screen {
+            height: 100vh;
+        }
+        .m-0 {
+            margin: 0;
+        }
+        .p-2 {
+            padding: .5rem;
+        }
+        .p-4 {
+            padding: 1rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-black {
+            color: #22292F;
+        }
+        .text-red-dark {
+            color: #3B0D0C;
+        }
+        .hover\:text-grey:hover {
+            color: #606F7B;
+        }
+        .font-thin {
+            font-weight: 200;
+        }
+        .font-sans {
+            font-family: 'Nunito', sans-serif;
+        }
+        @media (min-width: 576px) {
+            .sm-hidden {
+                display: none;
+            }
+        }
+        .absolute {
+            position: absolute;
+        }
+        .pin-r {
+            right: 0
+        }
+        .pin-b {
+            bottom: 0;
+        }
+        .h-6 {
+            height: 1.5rem;
+        }
+        .cursor-crosshair {
+            cursor: crosshair;
+        }
+        .shadow {
+            box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+                        0 5px 15px 0 rgba(0,0,0,0.08);
+        }
+        </style>
+    </head>
+    <body class="h-screen bg bg-white m-0 font-sans font-thin">
+        <div class="flex-center h-screen">
+            <h1 class="m-0 p-4 text-center bg-white text-red-dark cursor-crosshair shadow"
+                title="Ja, genau dich meine ich 😇"
+            >
+                Du bist ein 🎁
+                <br class="sm-hidden">
+                für die 🌍
+            </h1>
+        </div>
 
-    <a class="h-6 p-2 absolute pin-r pin-b text-black hover:text-grey"
-        href="https://github.com/SuddenlyRust/ruslansteiger.app"
-        title="Github repository of my wonderful homepage. Check it out my friend!"
-        target="_blank"
-    >
-        <svg class="h-full" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"/></svg>
-    </a>
-</body>
+        <a class="h-6 p-2 absolute pin-r pin-b text-black hover:text-grey"
+            href="https://github.com/SuddenlyRust/ruslansteiger.app"
+            title="Github repository of my wonderful homepage. Check it out my friend!"
+            target="_blank"
+        >
+            <svg class="h-full" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"/></svg>
+        </a>
+    </body>
 </html>
