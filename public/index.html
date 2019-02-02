@@ -93,6 +93,9 @@
         .absolute {
             position: absolute;
         }
+        .inline-block {
+            display: inline-block;
+        }
         .pin-r {
             right: 0
         }
@@ -120,6 +123,30 @@
             background-color: #EF5753;
             color: white;
         }
+        .rotate {
+            -webkit-animation: rotate 2s infinite;
+                    animation: rotate 2s infinite;
+        }
+        @-webkit-keyframes rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+            }
+        }
+        @keyframes rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+            }
+        }
         </style>
     </head>
     <body class="h-screen m-0 bg-red font-sans">
@@ -129,7 +156,7 @@
             >
                 Du bist ein 🎁
                 <br class="sm-hidden">
-                für die 🌍
+                für die <span class="inline-block rotate">🌍</span>
             </h1>
         </main>
 
@@ -157,7 +184,7 @@
                 motivational.innerHTML = `
                     You are a 🎁
                     <br class="sm-hidden">
-                    for the 🌍
+                    for the <span class="inline-block rotate">🌍</span>
                 `;
 
                 motivational.title = "Yes, it's YOU I'm talking about❗";
@@ -170,7 +197,7 @@
                 motivational.innerHTML = `
                     Tu es un 🎁
                     <br class="sm-hidden">
-                    pour le 🌍
+                    pour le <span class="inline-block rotate">🌍</span>
                 `;
 
                 motivational.title = "Oui, c'est bien de TOI dont je parle❗";
