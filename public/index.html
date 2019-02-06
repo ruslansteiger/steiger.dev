@@ -115,37 +115,16 @@
         .border {
             border-left: .25rem solid #EF5753;
         }
-        ::-moz-selection {
-            background-color: #EF5753;
-            color: white;
-        }
         ::selection {
             background-color: #EF5753;
             color: white;
         }
         .rotate {
-            -webkit-animation: rotate 2s infinite;
-                    animation: rotate 2s infinite;
-        }
-        @-webkit-keyframes rotate {
-            0% {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-            }
+            animation: rotate 2s infinite;
         }
         @keyframes rotate {
-            0% {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-            }
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
         </style>
     </head>
