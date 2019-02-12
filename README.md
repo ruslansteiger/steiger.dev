@@ -6,5 +6,5 @@
 | Language | Person | Date | Location |
 | -------- | ------ | ---- | -------- |
 | German (default) | Ruslan | 27.01.2019 | Pratteln, Switzerland |
-| English | Margot | 02.02.2019 | London, England |
+| English | Max | 02.02.2019 | London, England |
 | French | Margot | 02.02.2019 | London, England |
