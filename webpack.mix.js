@@ -1,23 +1,12 @@
 // Based on https://medium.com/@AndrewDelPrete/using-purifycss-to-remove-unused-tailwind-css-classes-173b3ee8ee01
-let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
-let glob = require('glob-all');
-let PurgecssPlugin = require('purgecss-webpack-plugin');
-
-// Custom PurgeCSS extractor for Tailwind that allows special characters in
-// class names.
-// https://github.com/FullHuman/purgecss#extractor
-class TailwindExtractor {
-    static extract(content) {
-        return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-    }
-}
+const mix = require('laravel-mix');
+const glob = require('glob-all');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 mix.setPublicPath('public')
     .postCss('./resources/css/app.css', './public/', [
-        tailwindcss('./tailwind.config.js')
+        require('tailwindcss')
     ])
-    .js('resources/app.js', 'public/')
     .browserSync({
         proxy: false,
         server: { baseDir: 'public' },
@@ -41,11 +30,13 @@ if (mix.inProduction()) {
                 ]),
                 extractors: [
                     {
-                        extractor: TailwindExtractor,
+                        // Custom PurgeCSS extractor for Tailwind that allows
+                        // special characters in class names.
+                        extractor: content => content.match(/[A-Za-z0-9-_:\/]+/g) || [],
 
-                        // Specify the file extensions to include when scanning for
-                        // class names.
-                        extensions: ['html', 'js'],
+                        // Specify the file extensions to include when scanning
+                        // for class names.
+                        extensions: ['html'],
                     }
                 ]
             })
