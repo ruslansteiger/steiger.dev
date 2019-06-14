@@ -1,6 +1,8 @@
 module.exports = {
   theme: {
-    // Some useful comment
+    cursor: {
+      crosshair: 'crosshair',
+    }
   },
   variants: {
     // Some useful comment

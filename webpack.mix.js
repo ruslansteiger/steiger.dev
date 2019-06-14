@@ -14,7 +14,7 @@ class TailwindExtractor {
 }
 
 mix.setPublicPath('public')
-    .postCss('./resources/app.css', './public/', [
+    .postCss('./resources/css/app.css', './public/', [
         tailwindcss('./tailwind.config.js')
     ])
     .js('resources/app.js', 'public/')
@@ -45,7 +45,7 @@ if (mix.inProduction()) {
 
                         // Specify the file extensions to include when scanning for
                         // class names.
-                        extensions: ['html', 'js', 'php', 'vue'],
+                        extensions: ['html', 'js'],
                     }
                 ]
             })

@@ -1,6 +1,8 @@
 // English
 // Let us not forget the actual brain behind this translation, Max.
 if (navigator.language.startsWith('en')) {
+    changeBrowserLanguage();
+
     let motivational = document.querySelector('h1');
 
     motivational.innerHTML = `
@@ -15,6 +17,8 @@ if (navigator.language.startsWith('en')) {
 // French
 // Thanks to the fantastic Margot who helped to make this possible.
 if (navigator.language.startsWith('fr')) {
+    changeBrowserLanguage();
+
     let motivational = document.querySelector('h1');
 
     motivational.innerHTML = `
@@ -24,4 +28,8 @@ if (navigator.language.startsWith('fr')) {
     `;
 
     motivational.title = "Oui, c'est bien de TOI dont je parle❗";
+}
+
+function changeBrowserLanguage() {
+    document.querySelector('html').lang = navigator.language;
 }
