@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     cursor: {
-      crosshair: 'crosshair',
+      help: 'help',
     }
   },
   variants: {
