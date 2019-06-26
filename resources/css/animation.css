@@ -1,0 +1,42 @@
+/*
+ * Infinite rotating world
+ */
+.rotate {
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+ * Shaking gift on touch
+ */
+.shake:focus,
+.shake:hover {
+    animation: shake 1s linear;
+    transform: translateX(0);
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+
+    20%, 80% {
+        transform: translateX(2px);
+    }
+
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}

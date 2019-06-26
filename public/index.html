@@ -19,12 +19,12 @@
         <link rel="shortcut icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="./app.css">
     </head>
-    <body class="bg-red font-sans">
-        <main class="bg min-h-screen bg-white flex justify-center items-center">
-            <h1 class="m-0 px-4 py-3 bg-white text-4xl text-center text-red-dark font-thin cursor-help shadow border-l border-red"
+    <body class="bg-red-500 font-sans">
+        <main class="min-h-screen bg-white flex justify-center items-center">
+            <h1 class="m-0 px-4 py-3 bg-white text-center text-4xl font-thin cursor-help shadow border-l border-red-500 leading-normal sm:leading-tight"
                 title="Ja, genau DU bist gemeint❗"
             >
-                Du bist ein 🎁
+                Du bist ein <span class="inline-block shake">🎁</span>
                 <br class="sm:hidden">
                 für die <span class="inline-block rotate">🌍</span>
             </h1>
@@ -53,7 +53,7 @@
                 let motivational = document.querySelector('h1');
 
                 motivational.innerHTML = `
-                    You are a 🎁
+                    You are a <span class="inline-block shake">🎁</span>
                     <br class="sm:hidden">
                     for the <span class="inline-block rotate">🌍</span>
                 `;
@@ -69,7 +69,7 @@
                 let motivational = document.querySelector('h1');
 
                 motivational.innerHTML = `
-                    Tu es un 🎁
+                    Tu es un <span class="inline-block shake">🎁</span>
                     <br class="sm:hidden">
                     pour le <span class="inline-block rotate">🌍</span>
                 `;
