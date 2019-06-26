@@ -12,7 +12,6 @@ mix.setPublicPath('public')
         server: { baseDir: 'public' },
         files: [
             'public/app.css',
-            'public/app.js',
             'public/**/*.+(html)',
         ]
     });
@@ -28,17 +27,15 @@ if (mix.inProduction()) {
                 paths: glob.sync([
                     path.join(__dirname, 'public/**/*.html'),
                 ]),
-                extractors: [
-                    {
-                        // Custom PurgeCSS extractor for Tailwind that allows
-                        // special characters in class names.
-                        extractor: content => content.match(/[A-Za-z0-9-_:\/]+/g) || [],
+                extractors: [{
+                    // Custom PurgeCSS extractor for Tailwind that allows
+                    // special characters in class names.
+                    extractor: content => content.match(/[A-Za-z0-9-_:\/]+/g) || [],
 
-                        // Specify the file extensions to include when scanning
-                        // for class names.
-                        extensions: ['html'],
-                    }
-                ]
+                    // Specify the file extensions to include when scanning
+                    // for class names.
+                    extensions: ['html'],
+                }]
             })
         ]
     });
