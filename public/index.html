@@ -45,6 +45,13 @@
         </a>
 
         <script>
+            /**
+             * Enable CSS pseudo selector style for the iPhone. Thank you Alex.
+             *
+             * Source: https://alxgbsn.co.uk/2011/10/17/enable-css-active-pseudo-styles-in-mobile-safari/
+             */
+            document.addEventListener('touchstart', function() {}, false);
+
             // English
             // Let us not forget the actual brain behind this translation, Max.
             if (navigator.language.startsWith('en')) {
