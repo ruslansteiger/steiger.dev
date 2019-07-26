@@ -5,7 +5,7 @@ const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 mix.setPublicPath('public')
     .postCss('./resources/css/app.css', './public/', [
-        require('tailwindcss')
+        require('tailwindcss'),
     ])
     .browserSync({
         proxy: false,
@@ -13,12 +13,11 @@ mix.setPublicPath('public')
         files: [
             'public/app.css',
             'public/**/*.+(html)',
-        ]
+        ],
     });
 
-// Only run PurgeCSS during production builds for faster development builds
-// and so you still have the full set of utilities available during
-// development.
+// Only run PurgeCSS during production builds for faster development builds and
+// so you still have the full set of utilities available during development.
 if (mix.inProduction()) {
     mix.webpackConfig({
         plugins: [
@@ -35,8 +34,8 @@ if (mix.inProduction()) {
                     // Specify the file extensions to include when scanning
                     // for class names.
                     extensions: ['html'],
-                }]
-            })
-        ]
+                }],
+            }),
+        ],
     });
 }
