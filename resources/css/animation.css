@@ -6,10 +6,6 @@
 }
 
 @keyframes rotate {
-    from {
-        /* transform: translate3d(rotate(0deg)); */
-    }
-
     to {
         transform: rotate3d(0, 1, 0, 360deg);
     }
