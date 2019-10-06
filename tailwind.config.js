@@ -1,13 +1,19 @@
+/*
+** TailwindCSS Configuration File
+**
+** Docs: https://tailwindcss.com/docs/configuration
+** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+*/
 module.exports = {
-  theme: {
-    cursor: {
-      help: 'help',
-    }
-  },
-  variants: {
-    // Some useful comment
-  },
-  plugins: [
-    // Some useful comment
-  ]
+    theme: {
+        cursor: {
+            help: 'help',
+        },
+    },
+    variants: {
+        //
+    },
+    plugins: [
+        //
+    ],
 }

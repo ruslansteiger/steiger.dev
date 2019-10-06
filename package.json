@@ -1,24 +1,20 @@
 {
+  "name": "ruslansteiger.app",
+  "version": "0.1.0",
+  "description": "Wenn du dich nicht aufhältst, kann dich nichts und niemand aufhalten!",
+  "author": "Ruslan Steiger",
+  "private": true,
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SuddenlyRust/ruslansteiger.app.git"
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "@nuxtjs/pwa": "^3.0.0-0"
   },
-  "author": "Ruslan Steiger <steiger.ruslan@gmail.com> (https://ruslansteiger.app)",
-  "homepage": "https://github.com/SuddenlyRust/ruslansteiger.app#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "cross-env": "^5.2.0",
-    "glob-all": "^3.1.0",
-    "laravel-mix": "^4.1.2",
-    "purgecss-webpack-plugin": "^1.5.0",
-    "tailwindcss": "^1.0.5"
+    "@nuxtjs/tailwindcss": "^1.1.2"
   }
 }
