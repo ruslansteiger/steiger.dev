@@ -36,3 +36,19 @@
         transform: translateX(4px);
     }
 }
+
+/*
+ * Slowly the text appears
+ */
+.grow {
+    animation: grow 333ms ease-in;
+}
+@keyframes grow {
+    from {
+        transform: scaleX(0);
+        color: transparent;
+    }
+    to {
+        transform: scaleX(1);
+    }
+}

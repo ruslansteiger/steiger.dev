@@ -1,7 +1,7 @@
 <template>
     <div>
         <main class="min-h-screen bg-white flex justify-center items-center">
-            <h1 class="m-0 px-4 py-3 bg-white text-center text-4xl font-thin cursor-help shadow border-l border-red-500 leading-normal sm:leading-tight"
+            <h1 class="m-0 px-4 py-3 bg-white text-center text-4xl font-thin cursor-help shadow border-l border-red-500 leading-normal sm:leading-tight grow"
                 title="Ja, genau DU bist gemeint❗"
             >
                 Du bist ein <span class="inline-block shake">🎁</span>
