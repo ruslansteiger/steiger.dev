@@ -5,15 +5,15 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-    theme: {
-        cursor: {
-            help: 'help',
-        },
-    },
-    variants: {
-        //
-    },
-    plugins: [
-        //
-    ],
+	theme: {
+		cursor: {
+			help: 'help',
+		},
+	},
+	variants: {
+		//
+	},
+	plugins: [
+		//
+	],
 }
