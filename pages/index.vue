@@ -1,6 +1,6 @@
 <template>
-	<div class="overflow-hidden">
-		<main class="min-h-screen bg-white flex justify-center items-center">
+	<div class="flex flex-col h-full overflow-hidden">
+		<main class="flex-1 flex justify-center items-center">
 			<h1 class="m-0 px-4 py-3 bg-white text-center text-4xl font-thin cursor-help shadow-lg border-l border-red-500 leading-normal sm:leading-tight slide-in"
 				title="Ja, genau DU bist gemeint❗"
 			>
@@ -10,7 +10,7 @@
 			</h1>
 		</main>
 
-		<a class="p-2 absolute right-0 bottom-0 text-black hover:text-gray-700"
+		<a class="ml-auto p-2 text-black hover:text-gray-700"
 			href="https://github.com/SuddenlyRust/ruslansteiger.app"
 			title="Github repository of my wonderful homepage. Check it out my friend!"
 			target="_blank"
