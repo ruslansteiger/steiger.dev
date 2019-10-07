@@ -82,11 +82,9 @@ export default {
          */
         fullHeight();
 
-        window.addEventListener('resize', () => {
-            fullHeight();
-        });
+        window.addEventListener('resize', () => { fullHeight() });
 
-        const fullHeight = () => {
+        function fullHeight() {
             let vh = window.innerHeight * 0.01;
 
             document.documentElement.style.setProperty('--vh', `${vh}px`);
