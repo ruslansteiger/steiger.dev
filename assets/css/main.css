@@ -4,14 +4,6 @@ a {
     transition: color .3s;
 }
 
-/* Add full height to page */
-html,
-body,
-#__layout,
-#__nuxt {
-	@apply h-full;
-}
-
 /*
  * Credits to Steve Schoger (https://twitter.com/steveschoger/) for
  * this wonderful background image. You are a good man. Thanks.
@@ -29,4 +21,9 @@ body::before {
 
 ::selection {
     @apply .bg-red-500 .text-white
+}
+
+main {
+	@apply h-screen;
+	height: calc(var(--vh, 1vh) * 100);
 }

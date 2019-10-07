@@ -1,6 +1,6 @@
 <template>
-	<div class="flex flex-col h-full overflow-hidden">
-		<main class="flex-1 flex justify-center items-center">
+	<div class="overflow-hidden">
+		<main class="flex justify-center items-center">
 			<h1 class="m-0 px-4 py-3 bg-white text-center text-4xl font-thin cursor-help shadow-lg border-l border-red-500 leading-normal sm:leading-tight slide-in"
 				title="Ja, genau DU bist gemeint❗"
 			>
@@ -10,7 +10,7 @@
 			</h1>
 		</main>
 
-		<a class="ml-auto p-2 text-black hover:text-gray-700"
+		<a class="absolute right-0 bottom-0 p-2 text-black hover:text-gray-700"
 			href="https://github.com/SuddenlyRust/ruslansteiger.app"
 			title="Github repository of my wonderful homepage. Check it out my friend!"
 			target="_blank"
@@ -37,8 +37,7 @@ export default {
          *
          * Source: https://alxgbsn.co.uk/2011/10/17/enable-css-active-pseudo-styles-in-mobile-safari/
          */
-        document.addEventListener('touchstart', function () {
-        }, false);
+        document.addEventListener('touchstart', function () {}, false);
 
         // English
         // Let us not forget the actual brain behind this translation, Max.
@@ -75,6 +74,17 @@ export default {
         function changeBrowserLanguage() {
             document.querySelector('html').lang = navigator.language;
         }
+
+        /**
+		 * Trick mobile browser to use 100% of the screen height.
+		 *
+		 * Source: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+         */
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
     }
 }
 </script>
