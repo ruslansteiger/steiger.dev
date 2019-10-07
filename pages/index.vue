@@ -80,11 +80,17 @@ export default {
 		 *
 		 * Source: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
          */
+        fullHeight();
+
         window.addEventListener('resize', () => {
+            fullHeight();
+        });
+
+        const fullHeight = () => {
             let vh = window.innerHeight * 0.01;
 
             document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
+		}
     }
 }
 </script>
