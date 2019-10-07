@@ -38,17 +38,16 @@
 }
 
 /*
- * Slowly the text appears
+ * Slide in  the text
  */
-.grow {
-    animation: grow 333ms ease-in;
+.slide-in {
+    animation: slide-in 1s ease-in 333ms;
 }
-@keyframes grow {
-    from {
-        transform: scaleX(0);
-        color: transparent;
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100vh) rotate(-90deg);
     }
-    to {
-        transform: scaleX(1);
-    }
+	80% {
+		transform: translateY(-10vh) rotate(-90deg);
+	}
 }
