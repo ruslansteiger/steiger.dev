@@ -70,6 +70,22 @@ export default {
 
             motivational.title = "Oui, c'est bien de TOI dont je parle❗";
         }
+	
+	// Czech
+        // Thanks to the fantastic Jen🔥 who helped to make this possible.
+        if (navigator.language.startsWith('cz')) {
+            changeBrowserLanguage();
+
+            let motivational = document.querySelector('h1');
+
+            motivational.innerHTML = `
+                    Ty jsi <span class="inline-block shake">🎁</span>
+                    <br class="sm:hidden">
+                    pro <span class="inline-block rotate">🌍</span>
+                `;
+
+            motivational.title = "Ano, jsi to TY o kom mluvím❗";
+        }
 
         function changeBrowserLanguage() {
             document.querySelector('html').lang = navigator.language;
