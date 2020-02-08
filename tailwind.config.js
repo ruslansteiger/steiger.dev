@@ -1,19 +1,16 @@
-/*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
 module.exports = {
-	theme: {
-		cursor: {
-			help: 'help',
-		},
-	},
-	variants: {
-		//
-	},
-	plugins: [
-		//
+	variants: [
+		'responsive',
+		'group-hover',
+		'focus-within',
+		'first',
+		'last',
+		'odd',
+		'even',
+		'hover',
+		'focus',
+		'active',
+		'visited',
+		'disabled',
 	],
 }
