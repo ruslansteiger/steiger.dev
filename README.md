@@ -8,3 +8,4 @@
 | German (default) | Ruslan | 27.01.2019 | Pratteln, Switzerland |
 | English | Max | 02.02.2019 | London, England |
 | French | Margot | 02.02.2019 | London, England |
+| Czech | Jen | 31.10.2019 | Basel, Switzerland |

@@ -2,11 +2,11 @@
 	<div class="overflow-hidden">
 		<main class="flex justify-center items-center">
 			<h1 class="m-0 px-4 py-3 bg-white text-center text-4xl font-thin cursor-help shadow-lg border-l border-red-500 leading-normal sm:leading-tight slide-in"
-				title="Ja, genau DU bist gemeint❗"
+				:title="motivationalHover"
 			>
-				Du bist ein <span class="inline-block shake">🎁</span>
+				{{ motivational1 }} <span class="inline-block shake">🎁</span>
 				<br class="sm:hidden">
-				für die <span class="inline-block rotate">🌍</span>
+				{{ motivational2 }} <span class="inline-block rotate">🌍</span>
 			</h1>
 		</main>
 
@@ -31,48 +31,53 @@
 
 <script>
 export default {
+    data() {
+        return {
+            motivational1: "Du bist ein",
+            motivational2: "für die",
+            motivationalHover: "Ja, genau DU bist gemeint❗"
+        }
+    },
     mounted() {
         /**
          * Enable CSS pseudo selector style for the iPhone. Thank you Alex.
          *
          * Source: https://alxgbsn.co.uk/2011/10/17/enable-css-active-pseudo-styles-in-mobile-safari/
          */
-        document.addEventListener('touchstart', function () {}, false);
+        document.addEventListener('touchstart', function () {}, false)
 
         // English
         // Let us not forget the actual brain behind this translation, Max.
         if (navigator.language.startsWith('en')) {
-            changeBrowserLanguage();
+            changeBrowserLanguage()
 
-            let motivational = document.querySelector('h1');
-
-            motivational.innerHTML = `
-                    You are a <span class="inline-block shake">🎁</span>
-                    <br class="sm:hidden">
-                    for the <span class="inline-block rotate">🌍</span>
-                `;
-
-            motivational.title = "Yes, it's YOU I'm talking about❗";
+            this.motivational1 = "You are a"
+            this.motivational2 = "for the"
+            this.motivationalHover = "Yes, it's YOU I'm talking about❗"
         }
 
         // French
         // Thanks to the fantastic Margot who helped to make this possible.
         if (navigator.language.startsWith('fr')) {
-            changeBrowserLanguage();
+            changeBrowserLanguage()
 
-            let motivational = document.querySelector('h1');
+            this.motivational1 = "Tu es un"
+            this.motivational2 = "pour le"
+            this.motivationalHover = "Oui, c'est bien de TOI dont je parle❗"
+        }
+	
+	    // Czech
+        // Thanks to the fantastic Jen🔥 who helped to make this possible.
+        if (navigator.language.startsWith('cs')) {
+            changeBrowserLanguage()
 
-            motivational.innerHTML = `
-                    Tu es un <span class="inline-block shake">🎁</span>
-                    <br class="sm:hidden">
-                    pour le <span class="inline-block rotate">🌍</span>
-                `;
-
-            motivational.title = "Oui, c'est bien de TOI dont je parle❗";
+            this.motivational1 = "Ty jsi"
+            this.motivational2 = "pro"
+            this.motivationalHover = "Ano, jsi to TY o kom mluvím❗"
         }
 
         function changeBrowserLanguage() {
-            document.querySelector('html').lang = navigator.language;
+            document.querySelector('html').lang = navigator.language
         }
 
         /**
@@ -80,14 +85,14 @@ export default {
 		 *
 		 * Source: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
          */
-        fullHeight();
+        fullHeight()
 
-        window.addEventListener('resize', () => { fullHeight() });
+        window.addEventListener('resize', () => { fullHeight() })
 
         function fullHeight() {
-            let vh = window.innerHeight * 0.01;
+            let vh = window.innerHeight * 0.01
 
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            document.documentElement.style.setProperty('--vh', `${vh}px`)
 		}
     }
 }
