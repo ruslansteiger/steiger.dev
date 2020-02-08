@@ -1,4 +1,9 @@
 {
+	"name": "ruslansteiger.app",
+	"version": "0.2.0",
+	"description": "Wenn du dich nicht aufhältst, kann dich nichts und niemand aufhalten!",
+	"author": "Ruslan Steiger",
+	"private": true,
 	"scripts": {
 		"dev": "nuxt",
 		"build": "nuxt build",
