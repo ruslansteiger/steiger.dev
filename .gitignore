@@ -15,3 +15,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Generated CSS
+public/app.css
