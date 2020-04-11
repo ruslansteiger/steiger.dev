@@ -1,5 +1,6 @@
 {
 	"scripts": {
+		"dev": "npm run serve",
 		"serve": "postcss css/tailwind.css --output public/app.css --use tailwindcss && live-server public/",
 		"build": "postcss css/tailwind.css --output public/app.css"
 	},
