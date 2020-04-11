@@ -4,8 +4,8 @@
 		"build": "postcss css/tailwind.css --output public/app.css"
 	},
 	"devDependencies": {
-		"@fullhuman/postcss-purgecss": "^2.1.0",
-		"autoprefixer": "^9.7.4",
+		"@fullhuman/postcss-purgecss": "^2.1.2",
+		"autoprefixer": "^9.7.6",
 		"live-server": "^1.2.1",
 		"postcss-cli": "^7.1.0",
 		"tailwindcss": "^1.2.0"
