@@ -1,6 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+	purge: ['./public/index.html'],
+
 	theme: {
 		extend: {
 			fontFamily: {
@@ -8,6 +10,7 @@ module.exports = {
 			},
 		},
 	},
+
 	variants: [
 		'responsive',
 		'group-hover',

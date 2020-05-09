@@ -1,14 +1,12 @@
 {
 	"scripts": {
 		"dev": "npm run serve",
-		"serve": "postcss css/tailwind.css --output public/app.css --use tailwindcss && live-server public/",
-		"build": "postcss css/tailwind.css --output public/app.css"
+		"serve": "cross-env NODE_ENV=development npx tailwindcss build css/tailwind.css -o public/app.css && live-server public/",
+		"build": "cross-env NODE_ENV=production npx tailwindcss build css/tailwind.css -o public/app.css"
 	},
 	"devDependencies": {
-		"@fullhuman/postcss-purgecss": "^2.1.2",
-		"autoprefixer": "^9.7.6",
+		"cross-env": "^7.0.2",
 		"live-server": "^1.2.1",
-		"postcss-cli": "^7.1.0",
-		"tailwindcss": "^1.3.3"
+		"tailwindcss": "^1.4.6"
 	}
 }
