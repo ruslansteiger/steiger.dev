@@ -7,6 +7,10 @@
 	"devDependencies": {
 		"cross-env": "^7.0.2",
 		"live-server": "^1.2.1",
+		"prettier": "^2.0.5",
 		"tailwindcss": "^1.4.6"
+	},
+	"prettier": {
+		"useTabs": true
 	}
 }
