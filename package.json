@@ -1,16 +1,19 @@
 {
 	"scripts": {
 		"dev": "npm run serve",
-		"serve": "cross-env NODE_ENV=development npx tailwindcss build css/tailwind.css -o public/app.css && live-server public/",
-		"build": "cross-env NODE_ENV=production npx tailwindcss build css/tailwind.css -o public/app.css"
+		"serve": "cross-env NODE_ENV=development npx tailwindcss build -o public/app.css && live-server public/",
+		"build": "cross-env NODE_ENV=production npx tailwindcss build -o public/app.css"
 	},
 	"devDependencies": {
 		"cross-env": "^7.0.2",
 		"live-server": "^1.2.1",
 		"prettier": "^2.0.5",
-		"tailwindcss": "^1.4.6"
+		"tailwindcss": "^1.6.2"
 	},
 	"prettier": {
-		"useTabs": true
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true,
+		"quoteProps": "consistent"
 	}
 }
