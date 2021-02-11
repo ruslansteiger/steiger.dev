@@ -120,7 +120,7 @@
 						<li class="flex items-center">
 							<img
 								class="w-8"
-								src="../assets/logo-Postgres.png"
+								src="../assets/logo-postgres.png"
 								alt="Postgres Logo"
 							/>
 							<span class="ml-2">Postgres</span>
