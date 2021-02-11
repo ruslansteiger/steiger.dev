@@ -1,20 +1,11 @@
 # Dependency directories
 node_modules/
 
-# Nuxt generate
-dist
-
 # IDE / Editor
 .idea
-
-# Service worker
-sw.*
 
 # Mac OSX
 .DS_Store
 
-# Vim swap files
-*.swp
-
-# Generated CSS
-public/app.css
+# Generated directories
+dist
