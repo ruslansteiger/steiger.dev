@@ -267,12 +267,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="overflow-hidden bg-white rounded-lg shadow">
-			<div class="px-4 py-5 sm:p-6">
-				Na schon aufgeregt mich zu treffen? Nicht schüchtern sein und einfach
-				melden :)
-			</div>
-		</div>
 
 		<div class="overflow-hidden bg-white rounded-lg shadow">
 			<div class="px-4 py-5 sm:p-6">
