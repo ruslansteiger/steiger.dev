@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
 	purge: ['./index.html', './src/**/*.vue'],
@@ -7,6 +8,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
+			},
+			colors: {
+				'light-blue': colors.lightBlue,
+				'cyan': colors.cyan,
 			},
 			animation: {
 				spin: 'spin 3s linear infinite',
@@ -23,5 +28,5 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/aspect-ratio')],
 }
