@@ -1,8 +1,8 @@
 import { createApp, h } from 'vue'
 
-import NotFound from './NotFound.vue'
-import Home from './Home.vue'
-import CurriculumVitae from './CurriculumVitae.vue'
+import NotFound from './pages/404.vue'
+import Home from './pages/Home.vue'
+import CurriculumVitae from './pages/CurriculumVitae.vue'
 
 const routes = {
 	'/': Home,
@@ -22,6 +22,12 @@ const SimpleRouter = {
 
 	render() {
 		return h(this.CurrentComponent)
+	},
+
+	created() {
+		window.addEventListener('popstate', () => {
+			this.currentRoute = window.location.pathname
+		})
 	},
 }
 
