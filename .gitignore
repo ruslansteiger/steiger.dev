@@ -1,11 +1,6 @@
-# Dependency directories
-node_modules/
-
-# IDE / Editor
-.idea
-
-# Mac OSX
-.DS_Store
-
-# Generated directories
-dist
+node_modules
+*.log
+.nuxt
+nuxt.d.ts
+.output
+.env

@@ -1,17 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
 
 module.exports = {
-	purge: ['./index.html', './src/**/*.vue'],
-	darkMode: false, // or 'media' or 'class'
+	content: ['./app.vue', './nuxt.config.{js,ts}'],
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Inter', ...defaultTheme.fontFamily.sans],
-			},
-			colors: {
-				'light-blue': colors.lightBlue,
-				'cyan': colors.cyan,
+				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 			},
 			animation: {
 				spin: 'spin 3s linear infinite',
@@ -24,9 +18,6 @@ module.exports = {
 				},
 			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [require('@tailwindcss/aspect-ratio')],
 }
