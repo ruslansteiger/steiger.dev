@@ -115,7 +115,7 @@
 import 'assets/main.css'
 
 useMeta({
-	htmlAttrs: { class: 'h-full' },
+	htmlAttrs: { class: 'h-full', lang: 'de' },
 	bodyAttrs: { class: 'font-sans antialiased text-gray-900 h-full bg-red-100' },
 	link: [
 		{ rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
