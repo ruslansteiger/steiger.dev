@@ -1,7 +1,7 @@
 <template>
 	<main class="bg-white pt-16 lg:py-24">
 		<div
-			class="pb-16 bg-gradient-to-r from-yellow-500 via-pink-500 to-red-500 lg:pb-0 lg:z-10 lg:relative"
+			class="pb-16 bg-gradient-to-r from-yellow-500 md:via-pink-500 to-red-500 lg:pb-0 lg:z-10 lg:relative"
 		>
 			<div
 				class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8"
