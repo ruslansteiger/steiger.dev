@@ -18,7 +18,7 @@
 							class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full"
 						>
 							<img
-								class="object-cover lg:h-full lg:w-full"
+								class="object-cover sm:object-top lg:object-center lg:h-full lg:w-full"
 								src="../assets/me.jpg"
 								alt="Ruslan wearing a Laravel shirt"
 							/>
