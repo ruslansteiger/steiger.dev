@@ -1,9 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-	content: ['./app.vue', './nuxt.config.{js,ts}'],
-	theme: {
-		extend: {
+  content: [
+		"./index.html",
+		"./src/**/*.{vue,js,ts,jsx,tsx}",
+	],
+  theme: {
+    extend: {
 			fontFamily: {
 				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 			},
@@ -18,6 +21,6 @@ module.exports = {
 				},
 			},
 		},
-	},
-	plugins: [require('@tailwindcss/aspect-ratio')],
+  },
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }
