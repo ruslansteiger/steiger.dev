@@ -1,22 +1,20 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.25"
-  },
-  "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@vitejs/plugin-vue": "^2.0.0",
-    "autoprefixer": "^10.4.1",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "tailwindcss": "^3.0.8",
-    "typescript": "^4.4.4",
-    "vite": "^2.7.2",
-    "vue-tsc": "^0.29.8"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc --noEmit && vite build",
+		"preview": "vite preview --port 8080"
+	},
+	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.0",
+		"@vitejs/plugin-vue": "^2.0.0",
+		"autoprefixer": "^10.4.1",
+		"postcss": "^8.4.5",
+		"prettier": "^2.5.1",
+		"tailwindcss": "^3.0.8",
+		"typescript": "^4.4.4",
+		"vite": "^2.7.2",
+		"vue": "^3.2.25",
+		"vue-tsc": "^0.29.8"
+	}
 }
